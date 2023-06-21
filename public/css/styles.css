@@ -1,0 +1,48 @@
+/* Add a black background color to the top navigation */
+* {
+    font-family: "Poppins", Helvetica, sans-serif;
+    background-color: #202020;
+}
+
+
+.topnav {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    height: 5rem;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 30px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  .navtop {
+    justify-items: start;
+  }
+
+  .navbot {
+    display: flex;
+    align-items: flex-end;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    color: black;
+    font-size: 1.3rem;
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    color: #13FF00;
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+  }
+  
+  .topnav a.active:hover {
+    font-size: 1.3rem;
+  }
