@@ -1,15 +1,16 @@
 /* Add a black background color to the top navigation */
 * {
     font-family: "Poppins", Helvetica, sans-serif;
-    background-color: #202020;
 }
-
-
+header {
+  background-color: rgba(32, 32, 32, 1);
+background-image: linear-gradient(59deg, rgba(32, 32, 32, 1) 50%, rgba(39, 39, 39, 1) 0%);
+}
 .topnav {
     overflow: hidden;
     display: flex;
     justify-content: center;
-    height: 5rem;
+    height: 4.7rem;
   }
   
   /* Style the links inside the navigation bar */
@@ -33,7 +34,8 @@
   /* Change the color of links on hover */
   .topnav a:hover {
     color: black;
-    font-size: 1.3rem;
+    transition: all 0.3s;
+    
   }
   
   /* Add a color to the active/current link */
@@ -44,5 +46,49 @@
   }
   
   .topnav a.active:hover {
-    font-size: 1.3rem;
+    font-weight: 600;
+  }
+
+  #headerinfo {
+    margin-top: 10rem;
+    margin-left: 5rem;
+  }
+
+  .gt {
+    color: #13FF00;
+  }
+
+  #headerinfo span{
+    position: relative
+  }
+
+  #headerinfo span:after {
+    content: "";
+    width: 120%;
+    position: absolute;
+    left: 0;
+    bottom: 1px;
+    border-width: 0 0 5px;
+    border-style: solid;
+    border-radius: 10px;
+  }
+
+  #headerinfo {
+    width: 570px;
+  }
+
+  #headerinfo h2 {
+    font-size: 44px;
+    margin-bottom: 0;
+  }
+
+  #headerinfo h1 {
+    font-size: 50px;
+    margin-top: 20px;
+    color: white;
+  }
+
+  #headerinfo p {
+    color: #8F8F8F;
+    font-size: 20px;
   }
