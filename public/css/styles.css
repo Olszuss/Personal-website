@@ -1,20 +1,22 @@
-/* Add a black background color to the top navigation */
+
 * {
     font-family: "Poppins", Helvetica, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
 header {
   background-color: rgba(32, 32, 32, 1);
-  background-image: linear-gradient(59deg, rgba(32, 32, 32, 1) 50%, rgba(39, 39, 39, 1) 0%);
-  
+  background-image: linear-gradient(59deg, rgba(32, 32, 32, 1) 50%, rgba(39, 39, 39, 1) 0%); 
 }
-
 .logo {
   position: absolute;
   left: 5rem;
-  top: 14px;
+  top: 0.875rem;
 }
 .topnav {
     overflow: hidden;
@@ -22,52 +24,38 @@ header {
     justify-content: center;
     height: 4.7rem;
   }
-  
-  /* Style the links inside the navigation bar */
   .topnav a {
-    
     color: #f2f2f2;
     text-align: center;
-    padding: 14px 30px;
+    padding: 0.875rem 1.875rem;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 1.2rem;
     font-weight: 600;
   }
   .navtop {
     justify-items: start;
   }
-
   .navbot {
     display: flex;
     align-items: flex-end;
   }
-  
-  /* Change the color of links on hover */
   .topnav a:hover {
     color: black;
-    transition: all 500ms;
-    
+    transition: all 500ms; 
   }
-  
-  /* Add a color to the active/current link */
   .topnav a.active {
     color: #13FF00;
   }
-
-
   #headerinfo {
     margin-top: 8rem;
     margin-left: 5rem;
   }
-
   .gt {
     color: #13FF00;
   }
-
   #headerinfo span{
     position: relative
   }
-
   #headerinfo span:after {
     content: "";
     width: 120%;
@@ -78,79 +66,67 @@ header {
     border-style: solid;
     border-radius: 10px;
   }
-
   #headerinfo {
-    width: 570px;
+    max-width: 35.625rem;
   }
-
   #headerinfo h2 {
-    font-size: 44px;
+    font-size: 2.8rem;
     margin-bottom: 0;
     font-weight: bold;
   }
-
   #headerinfo h1 {
-    font-size: 50px;
-    margin-top: 20px;
+    font-size: 3.1rem;
+    margin-top: 1.25rem;
     color: white;
     text-shadow: 0 0 3px #13FF00, 0 0 3px #13FF00;
   }
-
   #headerinfo p {
     color: #8F8F8F;
-    font-size: 20px;
-    margin-bottom: 15px;
+    font-size: 1.3rem;
+    margin-bottom: 0.938rem;
   }
-
-  #headerinfo button {
-    padding: 10px 50px;
+  button {
+    padding: 0.625rem 3.125rem;
     border-radius: 10px;
     cursor: pointer;
   }
-
   .btn1 {
     background-color: transparent;
     border: none;
     color: white;
     font-weight: 600;
-    font-size: 20px;
-    margin-right: 25px;
-    padding: 10px 10px 10px 0px !important;
+    font-size: 1.25rem;
+    margin-right: 1.563rem;
+    padding: 0.625rem 0.625rem 0.625rem 0px !important;
   }
-
   .btn1:hover{
     transition : 1000ms;
     color: #13FF00;
   }
-
   .btn {
     background-color: #13FF00;
     font-weight: 600;
-    font-size: 20px;
+    font-size: 1.25rem;
     border: none;
   }
-
   .header-icons {
     margin-top: 3rem;
     margin-left: 5rem;
   }
-  
   .header-icons {
     display: flex;
-    padding-bottom: 8rem;
-    
+    padding-bottom: 8rem;  
 }
-
   .header-icons a {
-    padding: 3px;
-    margin-right: 20px;
+    padding: 0.188rem;
+    margin-right: 1.25rem;
     text-decoration: none;
     position: relative;
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: 40px;
-    height: 40px;
+    width: 2.5rem;
+    height: 2.5rem;
     background-color: transparent;
     border-radius: 50%;
     color: #E2E2E2;
@@ -160,7 +136,6 @@ header {
     transition: .5s;
     background-color: #3F3F3F;
 }
-
   .header-icons a::before {
     content: '';
     position: absolute;
@@ -172,11 +147,9 @@ header {
     z-index: -1;
     transition: .5s;
 }
-
   .header-icons a:hover::before {
     width: 100%;
 }
-
 #about {
   background-color: #161616;
   display: flex;
@@ -184,7 +157,6 @@ header {
   justify-content: center;
   align-items: center;
 }
-
 #about h1 {
   padding-top: 5rem;
   text-align: center;
@@ -193,16 +165,35 @@ header {
   font-weight: 700;
   text-transform: uppercase;
 }
-
 #about p {
+  padding: 1.25rem;
   margin-top: 2rem;
   margin-bottom: 5rem;
-  width: 62rem;
+  max-width: 62rem;
   color: #8F8F8F;
   font-size: 1.875rem;
   font-weight: 500;
 }
-
 #about span {
   color: #13FF00;
 }
+
+@media screen and (max-width: 1000px) {
+
+  html {
+  
+  font-size: 12px;
+  
+  }
+  
+  }
+
+  @media screen and (max-width: 800px) {
+
+    html {
+    
+    font-size: 10px;
+    
+    }
+    
+    }
