@@ -66,7 +66,7 @@ header {
     position: absolute;
     left: 0;
     bottom: 1px;
-    border-width: 0 0 5px;
+    border-width: 0 0 3px;
     border-style: solid;
     border-radius: 10px;
   }
@@ -83,7 +83,7 @@ header {
     font-size: 3.1rem;
     margin-top: 1.25rem;
     color: white;
-    text-shadow: 0 0 3px #13FF00, 0 0 3px #13FF00;
+    text-shadow: 0 0 3px black, 0 0 3px black;
     letter-spacing: 0.2rem;
   }
   #headerinfo p {
@@ -183,6 +183,33 @@ header {
 }
 #about span {
   color: #13FF00;
+}
+#about button {
+  margin: 2rem;
+}
+
+#skills {
+  background-color: #1D1D1D;
+  text-align: center;
+}
+#skills h1 {
+  padding-top: 5rem;
+  text-align: center;
+  color: white;
+  font-size: 3.125rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  line-height: 5rem;
+}
+.left-panel, .right-panel{
+  padding: 2rem;
+  color: white;
 }
 
 @media screen and (max-width: 1000px) {
