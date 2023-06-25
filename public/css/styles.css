@@ -18,18 +18,22 @@ header {
   left: 5rem;
   top: 0.875rem;
 }
+.logo img {
+  width: 7.5rem;
+}
 .topnav {
     overflow: hidden;
     display: flex;
     justify-content: center;
+    align-items: end;
     height: 4.7rem;
   }
   .topnav a {
     color: #f2f2f2;
     text-align: center;
-    padding: 0.875rem 1.875rem;
+    padding: 0.875rem 1.875rem 0rem 0rem;
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     font-weight: 600;
   }
   .navtop {
@@ -73,12 +77,14 @@ header {
     font-size: 2.8rem;
     margin-bottom: 0;
     font-weight: bold;
+    letter-spacing: 0.2rem;
   }
   #headerinfo h1 {
     font-size: 3.1rem;
     margin-top: 1.25rem;
     color: white;
     text-shadow: 0 0 3px #13FF00, 0 0 3px #13FF00;
+    letter-spacing: 0.2rem;
   }
   #headerinfo p {
     color: #8F8F8F;
@@ -108,6 +114,7 @@ header {
     font-weight: 600;
     font-size: 1.25rem;
     border: none;
+    color: black;
   }
   .header-icons {
     margin-top: 3rem;
@@ -195,5 +202,17 @@ header {
     font-size: 10px;
     
     }
+    .topnav a {
+      display: none;
+    }
     
+    #headerinfo {
+      margin-left: 2rem;
+    }
+    .logo {
+      left: 2rem;
+    }
+    #headerinfo span:after {
+      width: 80%;
+    }
     }
