@@ -87,6 +87,7 @@ header {
     letter-spacing: 0.2rem;
   }
   #headerinfo p {
+    margin-top: 1rem;
     color: #8F8F8F;
     font-size: 1.3rem;
     margin-bottom: 0.938rem;
@@ -189,29 +190,51 @@ header {
 }
 
 #skills {
+  padding-left: 10rem;
+  padding-right: 10rem;
   background-color: #1D1D1D;
   text-align: center;
+  color: white;
 }
 #skills h1 {
   padding-top: 5rem;
   text-align: center;
-  color: white;
   font-size: 3.125rem;
   font-weight: 700;
   text-transform: uppercase;
 }
 
 .container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  line-height: 5rem;
-}
-.left-panel, .right-panel{
-  padding: 2rem;
-  color: white;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  font-size: 4rem;
+  padding: 8rem;
 }
 
+.container i {
+  line-height: 6rem;
+}
+  
+  .container i:nth-child(1) { grid-area: 1 / 1 / 2 / 2; }
+  .container i:nth-child(2) { grid-area: 1 / 3 / 2 / 4; }
+  .container i:nth-child(3) { grid-area: 1 / 5 / 2 / 6; }
+  .container i:nth-child(4) { grid-area: 3 / 1 / 4 / 2; }
+  .container i:nth-child(5) { grid-area: 3 / 3 / 3 / 4; }
+  .container i:nth-child(6) { grid-area: 3 / 5 / 4 / 6; }
+
+footer {
+  background-color: #202020;
+  height: 6.4375rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer p {
+  color: #8F8F8F;
+}
 @media screen and (max-width: 1000px) {
 
   html {
@@ -220,9 +243,29 @@ header {
   
   }
   
+  .container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    font-size: 4rem;
+    padding: 6rem;
+    }
+
+    .container i {
+      line-height: 6rem;
+    }
+    
+    .container i:nth-child(1) { grid-area: 1 / 2 / 2 / 3; }
+    .container i:nth-child(2) { grid-area: 1 / 4 / 2 / 5; }
+    .container i:nth-child(3) { grid-area: 3 / 4 / 4 / 5; }
+    .container i:nth-child(4) { grid-area: 3 / 2 / 4 / 3; }
+    .container i:nth-child(5) { grid-area: 5 / 2 / 6 / 3; }
+    .container i:nth-child(6) { grid-area: 5 / 4 / 6 / 5; }
   }
 
-  @media screen and (max-width: 800px) {
+@media screen and (max-width: 800px) {
 
     html {
     
@@ -241,5 +284,8 @@ header {
     }
     #headerinfo span:after {
       width: 80%;
+    }
+    .container {
+      padding: 1rem;
     }
     }
