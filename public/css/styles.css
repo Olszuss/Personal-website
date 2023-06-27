@@ -292,5 +292,7 @@ footer p {
     .mobile-nav {
       display: flex !important;
       font-size: 3rem;
+      right: 2rem;
+      top: 0.875rem;
     }
     }
