@@ -36,19 +36,20 @@ header {
     font-size: 1.5rem;
     font-weight: 600;
   }
-  .navtop {
-    justify-items: start;
-  }
-  .navbot {
-    display: flex;
-    align-items: flex-end;
-  }
   .topnav a:hover {
     color: black;
     transition: all 500ms; 
   }
   .topnav a.active {
     color: #13FF00;
+  }
+  .mobile-nav {
+    color: #E2E2E2;
+    font-size: 2rem;
+    font-weight: 600;
+    position: absolute;
+    right: 5rem;
+    display: none !important;
   }
   #headerinfo {
     margin-top: 8rem;
@@ -287,5 +288,9 @@ footer p {
     }
     .container {
       padding: 1rem;
+    }
+    .mobile-nav {
+      display: flex !important;
+      font-size: 3rem;
     }
     }
