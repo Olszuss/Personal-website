@@ -236,6 +236,19 @@ footer {
 footer p {
   color: #8F8F8F;
 }
+
+#projects {
+  background-color: #161616;
+  color: white;
+}
+#projects h1 {
+  padding-top: 5rem;
+  text-align: center;
+  font-size: 3.125rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
 @media screen and (max-width: 1000px) {
 
   html {
