@@ -93,7 +93,7 @@ header {
     font-size: 1.3rem;
     margin-bottom: 0.938rem;
   }
-  button {
+  #headerinfo button, #about button {
     padding: 0.625rem 3.125rem;
     border-radius: 10px;
     cursor: pointer;
@@ -247,6 +247,154 @@ footer p {
   font-size: 3.125rem;
   font-weight: 700;
   text-transform: uppercase;
+}
+
+
+
+#projects {
+  background-color: #161616;
+  color: white;
+}
+
+#contact {
+  background-color:#202020 ;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+#contact h1 {
+  padding-top: 5rem;
+  text-align: center;
+  font-size: 3.125rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+ input {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+}
+
+.contact-container {
+  flex: 0 1 700px;
+  margin: auto;
+  width: 60%;
+  padding: 20px;
+}
+
+.screen {
+  position: relative;
+  background: #3e3e3e;
+  border-radius: 15px;
+}
+
+.screen:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 20px;
+  right: 20px;
+  bottom: 0;
+  border-radius: 15px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, .4);
+  z-index: -1;
+}
+
+.screen-header {
+  display: flex;
+  align-items: center;
+  padding: 20px 20px;
+  background: #4d4d4f;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.screen-body {
+  display: flex;
+}
+
+.screen-body-item {
+  flex: 1;
+  padding: 50px;
+}
+
+.screen-body-item.left {
+  display: flex;
+  flex-direction: column;
+}
+
+.app-title {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  color: #13FF00;
+  font-size: 26px;
+}
+
+.app-title:after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  width: 25px;
+  height: 4px;
+  background: #13FF00;
+}
+
+.app-contact {
+  margin-top: auto;
+  font-size: 8px;
+  color: #888;
+}
+
+.app-form-group {
+  margin-bottom: 15px;
+}
+
+.app-form-group.message {
+  margin-top: 40px;
+}
+
+.app-form-group.buttons {
+  margin-bottom: 0;
+  text-align: right;
+}
+
+.app-form-control {
+  width: 100%;
+  padding: 10px 0;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #666;
+  color: #ddd;
+  font-size: 14px;
+  text-transform: uppercase;
+  outline: none;
+  transition: border-color .2s;
+}
+
+.app-form-control::placeholder {
+  color: #666;
+}
+
+.app-form-control:focus {
+  border-bottom-color: #ddd;
+}
+
+.app-form-button {
+  background: none;
+  border: none;
+  color: #13FF00;
+  font-size: 14px;
+  cursor: pointer;
+  outline: none;
+}
+
+.app-form-button:hover {
+  color: green;
 }
 
 @media screen and (max-width: 1000px) {
