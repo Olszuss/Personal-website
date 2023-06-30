@@ -77,49 +77,48 @@
 
   <section id="projects">
     <h1>Projects</h1>
-  </section>
-  <section id="contact">
-    <h1>Contact</h1>
-    <div class="contact-container">
-      <div class="screen">
-        <div class="screen-header">
+    <div class="slider-container">
+      <div class="slider">
+        <div class="slide">
+          <img src="https://cdn.pixabay.com/photo/2015/07/17/22/43/student-849825_1280.jpg" width="500px" alt="">
         </div>
-        <div class="screen-body">
-          <div class="screen-body-item left">
-            <div class="app-title">
-              <span>CONTACT</span>
-              <span>ME</span>
-            </div>
-            <div class="app-contact">CONTACT INFO : +48 536 914 881</div>
-          </div>
-          <div class="screen-body-item">
-            <div class="app-form">
-              <div class="app-form-group">
-                <input class="app-form-control" placeholder="NAME">
-              </div>
-              <div class="app-form-group">
-                <input class="app-form-control" placeholder="EMAIL">
-              </div>
-              <div class="app-form-group">
-                <input class="app-form-control" placeholder="CONTACT NO">
-              </div>
-              <div class="app-form-group message">
-                <input class="app-form-control" placeholder="MESSAGE">
-              </div>
-              <div class="app-form-group buttons">
-                <button class="app-form-button">CANCEL</button>
-                <button class="app-form-button">SEND</button>
-              </div>
-            </div>
-          </div>
+        <div class="slide">
+          <img src="https://cdn.pixabay.com/photo/2015/07/17/22/43/student-849822_1280.jpg" width="500px" alt="">
+        </div>
+        <div class="slide">
+          <img src="https://cdn.pixabay.com/photo/2018/08/18/13/26/interface-3614766_1280.png" width="500px" alt="">
         </div>
       </div>
+      <div class="slider-controls">
+        <button class="prev-slide">Prev</button>
+        <button class="next-slide">Next</button>
+      </div>
+    </div>
+  </section>
+  
+  <section id="contact">
+    <h1>Contact</h1>
+    <form action="/submit-contact-form" method="POST">
+      <div>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+      </div>
+      <button type="submit">Submit</button>
+    </form>
   </section>
 
   <footer>
     <p>© 2023 Adam Olszewski All rights reserved</p>
   </footer>
 
-  <script src="/public/slider.js"></script>
+  <script src="/slider.js"></script>
 </body>
 </html>

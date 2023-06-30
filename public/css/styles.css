@@ -252,149 +252,112 @@ footer p {
 
 
 #projects {
-  background-color: #161616;
-  color: white;
+  background-color: #202020;
+  padding: 4rem;
+  
 }
 
-#contact {
-  background-color:#202020 ;
-  color: white;
-  display: flex;
-  flex-direction: column;
-}
-#contact h1 {
-  padding-top: 5rem;
+#projects h1 {
   text-align: center;
   font-size: 3.125rem;
   font-weight: 700;
   text-transform: uppercase;
 }
 
- input {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
-  letter-spacing: 1.4px;
-}
-
-.contact-container {
-  flex: 0 1 700px;
-  margin: auto;
-  width: 60%;
-  padding: 20px;
-}
-
-.screen {
+.slider-container {
   position: relative;
-  background: #3e3e3e;
-  border-radius: 15px;
 }
 
-.screen:after {
-  content: '';
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 20px;
-  right: 20px;
-  bottom: 0;
-  border-radius: 15px;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, .4);
-  z-index: -1;
-}
-
-.screen-header {
+.slider {
   display: flex;
-  align-items: center;
-  padding: 20px 20px;
-  background: #4d4d4f;
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
+  overflow: hidden;
+  scroll-behavior: smooth;
 }
 
-.screen-body {
+.slide {
+  flex: 0 0 100%; 
+  padding: 1rem;
+  text-align: center;
+}
+
+.slider-controls {
   display: flex;
+  justify-content: center;
+  margin-top: 1rem;
 }
 
-.screen-body-item {
-  flex: 1;
-  padding: 50px;
-}
-
-.screen-body-item.left {
-  display: flex;
-  flex-direction: column;
-}
-
-.app-title {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  color: #13FF00;
-  font-size: 26px;
-}
-
-.app-title:after {
-  content: '';
-  display: block;
-  position: absolute;
-  left: 0;
-  bottom: -10px;
-  width: 25px;
-  height: 4px;
-  background: #13FF00;
-}
-
-.app-contact {
-  margin-top: auto;
-  font-size: 8px;
-  color: #888;
-}
-
-.app-form-group {
-  margin-bottom: 15px;
-}
-
-.app-form-group.message {
-  margin-top: 40px;
-}
-
-.app-form-group.buttons {
-  margin-bottom: 0;
-  text-align: right;
-}
-
-.app-form-control {
-  width: 100%;
-  padding: 10px 0;
-  background: none;
+.slider-controls button {
+  padding: 0.5rem 1rem;
+  margin: 0 0.25rem;
+  background-color: #2d2d2d;
+  color: white;
   border: none;
-  border-bottom: 1px solid #666;
-  color: #ddd;
-  font-size: 14px;
-  text-transform: uppercase;
-  outline: none;
-  transition: border-color .2s;
-}
-
-.app-form-control::placeholder {
-  color: #666;
-}
-
-.app-form-control:focus {
-  border-bottom-color: #ddd;
-}
-
-.app-form-button {
-  background: none;
-  border: none;
-  color: #13FF00;
-  font-size: 14px;
+  border-radius: 5px;
+  font-weight: 600;
   cursor: pointer;
-  outline: none;
 }
 
-.app-form-button:hover {
-  color: green;
+.slider-controls button:hover {
+  background-color: #161616;
+  transition: background-color 0.3s ease;
+}
+
+
+#contact {
+  background-color: #161616;
+  color: white;
+  padding: 4rem;
+}
+
+#contact h1 {
+  text-align: center;
+  font-size: 3.125rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+#contact form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#contact form div {
+  margin-bottom: 1.5rem;
+}
+
+#contact form label {
+  font-weight: 600;
+}
+
+#contact form input,
+#contact form textarea {
+  width: 100%;
+  padding: 1rem;
+  margin-top: 0.5rem;
+  border-radius: 5px;
+  border: none;
+  background-color: #2d2d2d;
+  color: white;
+}
+
+#contact form textarea {
+  height: 10rem;
+}
+
+#contact form button {
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  border: none;
+  background-color: #13FF00;
+  color: black;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+#contact form button:hover {
+  background-color: #0BD100;
+  transition: all 0.3s ease;
 }
 
 @media screen and (max-width: 1000px) {
@@ -456,4 +419,33 @@ footer p {
       right: 2rem;
       top: 0.875rem;
     }
+    }
+
+    @media (max-width: 768px) {
+      #contact form div {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1rem;
+      }
+    
+      #contact form div label,
+      #contact form div input,
+      #contact form div textarea {
+        width: 100%;
+      }
+    
+      #contact form button {
+        width: 100%;
+      }
+      .slider {
+        flex-wrap: wrap;
+      }
+    
+      .slide {
+        flex: 0 0 100%;
+        margin-bottom: 1rem;
+      }
+      .slider-controls {
+        display: none;
+      }
     }
