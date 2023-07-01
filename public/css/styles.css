@@ -236,11 +236,6 @@ footer {
 footer p {
   color: #8F8F8F;
 }
-
-#projects {
-  background-color: #161616;
-  color: white;
-}
 #projects h1 {
   padding-top: 5rem;
   text-align: center;
@@ -254,6 +249,11 @@ footer p {
 #projects {
   background-color: #202020;
   padding: 4rem;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   
 }
 
@@ -266,6 +266,7 @@ footer p {
 
 .slider-container {
   position: relative;
+  width: 30%;
 }
 
 .slider {
@@ -335,14 +336,15 @@ footer p {
   width: 100%;
   padding: 1rem;
   margin-top: 0.5rem;
-  border-radius: 5px;
+  border-radius: 1rem;
   border: none;
   background-color: #2d2d2d;
   color: white;
+  resize: none;
 }
 
 #contact form textarea {
-  height: 10rem;
+  height: 15rem;
 }
 
 #contact form button {
